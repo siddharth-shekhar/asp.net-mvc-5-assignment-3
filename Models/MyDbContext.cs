@@ -7,12 +7,12 @@ using System.Data.Entity;
 
 namespace Assignment1_ASP.NET_MVC.Models
 {
-    public class MyDbContext : DbContext
-    {
-        public MyDbContext() : base("name = conn")  //it specifies connection string 
-        {
+                  public class MyDbContext : DbContext
+                                 {
+                                                    public MyDbContext() : base("name = conn")  //it's specifies connection string 
+                                                                    {
 
-        }
-        public DbSet<User> Users { get; set; }
-    }
+                                 }
+                                                                                     public DbSet<User> Users { get; set; }
+                                                                   }
 }
